@@ -442,9 +442,9 @@ def train(hyp, opt, device, callbacks):  # hyp is path/to/hyp.yaml or hyp dictio
 def parse_opt(known=False):
     parser = argparse.ArgumentParser()
     #parser.add_argument('--weights', type=str, default=ROOT / 'yolov5.pt', help='initial weights path')
-    parser.add_argument('--weights', type=str, default='E:/bishe/yolov5/yolov5-master/yolov5s.pt', help='initial weights path')
-    parser.add_argument('--cfg', type=str, default='E:/bishe/yolov5/yolov5-master/models/yolov5s.yaml', help='model.yaml path')
-    parser.add_argument('--data', type=str, default='E:/bishe/yolov5/yolov5-master/data/laji.yaml', help='dataset.yaml path')
+    parser.add_argument('--weights', type=str, default='E:/yolov5/yolov5-master/yolov5s.pt', help='initial weights path')
+    parser.add_argument('--cfg', type=str, default='E:/yolov5/yolov5-master/models/yolov5s.yaml', help='model.yaml path')
+    parser.add_argument('--data', type=str, default='E:/yolov5/yolov5-master/data/laji.yaml', help='dataset.yaml path')
     parser.add_argument('--hyp', type=str, default=ROOT / 'data/hyps/hyp.scratch-low.yaml', help='hyperparameters path')
     parser.add_argument('--epochs', type=int, default=100, help='total training epochs')
     parser.add_argument('--batch-size', type=int, default=8, help='total batch size for all GPUs, -1 for autobatch')
